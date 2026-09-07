@@ -295,16 +295,18 @@ section{padding:110px 52px;position:relative;}
    CONTACT
    ========================================================= */
 #contact{background:var(--bg-2);}
-.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;margin-top:60px;align-items:start;}
-.contact-hl{font-family:var(--font-d);font-size:clamp(26px,3.5vw,40px);font-weight:400;line-height:1.25;margin-bottom:20px;}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:72px;margin-top:52px;align-items:start;width:min(100%,1180px);}
+.contact-grid > .reveal{width:100%;}
+.contact-hl{font-family:var(--font-d);font-size:clamp(42px,6vw,72px);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin-bottom:28px;max-width:900px;}
 .contact-hl em{font-style:italic;color:var(--accent);}
-.contact-desc{font-size:15px;font-weight:300;color:var(--text-2);line-height:1.8;margin-bottom:28px;}
-.contact-links{display:flex;flex-direction:column;gap:10px;}
-.clink{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1px solid var(--border);border-radius:var(--r2);background:var(--bg-card);transition:all var(--t2);}
+.contact-desc{font-size:clamp(16px,1.35vw,19px);font-weight:300;color:var(--text-2);line-height:1.75;margin-bottom:36px;max-width:900px;}
+.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%;}
+.contact-links .clink{min-height:82px;}
+.clink{display:flex;align-items:center;gap:16px;padding:18px 20px;border:1px solid var(--border);border-radius:var(--r2);background:var(--bg-card);transition:all var(--t2);}
 .clink:hover{border-color:var(--accent);background:var(--accent-soft);}
 .clink-icon{width:34px;height:34px;border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
 .clink-type{font-family:var(--font-m);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);}
-.clink-val{font-size:13px;font-weight:400;color:var(--text-2);}
+.clink-val{font-size:14px;font-weight:400;color:var(--text-2);}
 .clink:hover .clink-val{color:var(--accent);}
 .cform{display:flex;flex-direction:column;gap:14px;}
 .fg{display:flex;flex-direction:column;gap:7px;}
@@ -340,6 +342,7 @@ footer{padding:36px 52px;border-top:1px solid var(--border);display:flex;align-i
   .hero-socials,.scroll-ind{display:none;}
   footer{padding:28px 24px;flex-direction:column;text-align:center;}
   .fg.two{grid-template-columns:1fr;}
+  .contact-links{grid-template-columns:1fr;}
 }
 @media(max-width:580px){.proj-grid,.skills-grid,.learn-grid,.think-grid{grid-template-columns:1fr;}.hero-btns{flex-direction:column;align-items:flex-start;}}
 </style>
@@ -1021,7 +1024,7 @@ footer{padding:36px 52px;border-top:1px solid var(--border);display:flex;align-i
      ========================================================= -->
 <section id="contact">
   <div class="sec-label reveal">Contact</div>
-  <div class="contact-grid" style="grid-template-columns:1fr;max-width:560px;">
+  <div class="contact-grid" style="grid-template-columns:1fr;max-width:100%;">
     <div class="reveal">
       <h2 class="contact-hl">Let's talk data,<br/>strategy, and<br/><em>meaningful work.</em></h2>
       <p class="contact-desc">I'm open to internships in <strong>Data, Business, and Strategy Analytics</strong>. Always up for conversations around data, business, growth, or CaseLens collaborations. If something resonates — reach out.</p>
@@ -1048,7 +1051,7 @@ footer{padding:36px 52px;border-top:1px solid var(--border);display:flex;align-i
 
 <footer>
   <div class="foot-logo">Saraah<span>.</span></div>
-  <div class="foot-copy">© 2025 Saraah Salim Patel — Built with intention.</div>
+  <div class="foot-copy">© 2026 Saraah Salim Patel — Built with intention.</div>
   <div class="foot-links">
     <a href="#hero">Top</a>
     <a href="#work">Work</a>
