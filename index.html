@@ -1043,16 +1043,22 @@ footer{padding:36px 52px;border-top:1px solid var(--border);display:flex;align-i
       </div>
     </div>
 
-    <div class="cform reveal d2">
+    <form class="cform reveal d2" action="https://formsubmit.co/saraahsalimpatel2000@gmail.com" method="POST">
+      <!-- Formsubmit config -->
+      <input type="hidden" name="_subject" value="New message from your portfolio"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="text" name="_honey" style="display:none"/>
+
       <div class="fg two">
-        <div class="fg"><label class="flabel">Name</label><input type="text" class="finput" placeholder="Your name"/></div>
-        <div class="fg"><label class="flabel">Email</label><input type="email" class="finput" placeholder="your@email.com"/></div>
+        <div class="fg"><label class="flabel">Name</label><input type="text" name="name" class="finput" placeholder="Your name" required/></div>
+        <div class="fg"><label class="flabel">Email</label><input type="email" name="email" class="finput" placeholder="your@email.com" required/></div>
       </div>
-      <div class="fg"><label class="flabel">Subject</label><input type="text" class="finput" placeholder="Internship / Collaboration / CaseLens / Say hi"/></div>
-      <div class="fg"><label class="flabel">Message</label><textarea class="ftextarea" placeholder="What are you working on, or what opportunity do you have in mind?"></textarea></div>
-      <button class="fsub" onclick="handleSend(this)"><span>Send Message</span><span>→</span></button>
+      <div class="fg"><label class="flabel">Subject</label><input type="text" name="subject" class="finput" placeholder="Internship / Collaboration / CaseLens / Say hi"/></div>
+      <div class="fg"><label class="flabel">Message</label><textarea name="message" class="ftextarea" placeholder="What are you working on, or what opportunity do you have in mind?" required></textarea></div>
+      <button type="submit" class="fsub"><span>Send Message</span><span>→</span></button>
       <p class="fnote">I typically respond within 24–48 hours. Open to global opportunities from Hyderabad.</p>
-    </div>
+    </form>
   </div>
 </section>
 
